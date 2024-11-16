@@ -38,7 +38,7 @@ const Footer = () => {
           </div>
         </BlurFade>
 
-        <div className="flex mt-20 items-center justify-center w-full">
+        <div className="flex mt-16 sm:mt-20 items-center justify-center w-full">
           <BlurFade delay={BLUR_FADE_DELAY} className="flex items-center">
             <Button
               borderRadius="14px"
@@ -46,13 +46,13 @@ const Footer = () => {
             >
               <Link
                 href={DATA.contact.social.Email.url}
-                className="group relative inline-flex h-[40px] w-auto items-center justify-center pl-1 sm:pl-3 pr-6 sm:pr-10 font-medium"
+                className="group relative inline-flex h-[40px] w-auto items-center justify-center pl-2 sm:pl-4 pr-8 sm:pr-12 font-medium"
               >
-                <span className="z-10 pr-1 sm:pr-2 text-sm sm:text-xl">
+                <span className="z-10 pr-2 sm:pr-4 text-sm sm:text-xl">
                   {DATA.contact.social.Email.name}
                 </span>
                 <div className="absolute right-1 inline-flex h-7 w-7 sm:h-10 sm:w-10 items-center justify-end rounded-full">
-                  <div className="mr-1.5 sm:mr-2.5 flex items-center justify-center">
+                  <div className="mx-1.5 sm:mx-2.5 flex items-center justify-center">
                     <SendIcon className="size-4 sm:size-5" />
                   </div>
                 </div>
