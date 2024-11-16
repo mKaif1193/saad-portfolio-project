@@ -139,10 +139,10 @@ export const DATA = {
   ],
   education: [
     {
-      school: "Virtual University (VU) of Pakistan",
-      href: "https://www.vu.edu.pk/",
+      school: "Punjab University (PU)",
+      href: "https://www.pu.edu.pk/",
       degree: "Master's in Islamic Studies (MS Islamic Studies)",
-      logoUrl: "vu.png",
+      logoUrl: "pu.png",
       start: "2018",
       end: "2020",
     },
