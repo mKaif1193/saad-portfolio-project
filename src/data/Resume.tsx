@@ -58,7 +58,7 @@ export const DATA = {
     { href: "#contact", icon: PhoneIcon, label: "Contact" },
   ],
   contact: {
-    email: "saad@gmail.com",
+    email: "saadrana4251@gmail.com",
     tel: "+923123456789",
     social: {
       GitHub: {
