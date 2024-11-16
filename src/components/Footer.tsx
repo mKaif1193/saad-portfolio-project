@@ -128,7 +128,7 @@ const Footer = () => {
 
       <div className="flex mt-16 md:flex-row flex-col justify-between items-center mb-[50px] sm:mb-[80px]">
         <p className="text-sm md:text-base md:font-normal font-light text-center sm:mb-0 mb-4">
-          Copyright &copy; 2024 - Saad <br /> saad.vercel.app
+          Copyright &copy; 2024 - Saad <br /> saad-portfolio-project.vercel.app
         </p>
 
         <div className="flex flex-wrap items-center justify-center mx-10 md:gap-3 gap-6">

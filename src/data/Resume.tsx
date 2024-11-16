@@ -10,7 +10,7 @@ import {
 export const DATA = {
   name: "Saad",
   initials: "S",
-  url: "http://localhost:3000",
+  url: "https://saad-portfolio-project.vercel.app/",
   location: "Islamabad, Pakistan",
   locationLink: "https://www.google.com/maps/place/islamabad",
   description:
