@@ -78,7 +78,7 @@ const Hero = () => {
             </BlurFade>
           </div>
 
-          <div className="flex items-center px-10 justify-between w-full">
+          <div className="flex items-center flex-wrap gap-4 sm:px-10 justify-between w-full">
             <BlurFade delay={BLUR_FADE_DELAY} className="flex items-center">
               <Button
                 borderRadius="14px"
@@ -86,9 +86,9 @@ const Hero = () => {
               >
                 <Link
                   href={DATA.contact.social.Email.url}
-                  className="group relative inline-flex h-[40px] w-auto items-center justify-center pl-3 pr-4 sm:pr-8 font-medium"
+                  className="group relative inline-flex h-[35px] sm:h-[40px] w-auto items-center justify-center pl-3 pr-4 sm:pr-8 font-medium"
                 >
-                  <span className="z-10 pr-2 text-sm sm:text-base">
+                  <span className="z-10 pr-4 text-sm sm:text-lg">
                     Download Resume
                   </span>
                   <div className="absolute right-1 inline-flex h-7 w-7 sm:h-10 sm:w-10 items-center justify-end rounded-full">
@@ -161,9 +161,9 @@ const Hero = () => {
 
               <Link
                 href={DATA.contact.social.Email.url}
-                className="group relative inline-flex h-[40px] w-auto bg-gradient-to-r from-black-200 to-black-100 border-2 border-black-100 items-center justify-center rounded-l-none pl-2 sm:pl-6 pr-10 sm:pr-14 font-medium text-neutral-50"
+                className="group relative inline-flex h-[40px] sm:h-[45px] w-auto bg-gradient-to-r from-black-200 to-black-100 border-2 border-black-100 items-center justify-center rounded-l-none pl-2 sm:pl-6 pr-10 sm:pr-14 font-medium text-neutral-50"
               >
-                <span className="z-10 pr-1 sm:pr-2 text-base sm:text-xl">
+                <span className="z-10 pr-1 sm:pr-2 text-sm sm:text-lg">
                   {DATA.contact.social.Email.name}
                 </span>
                 <div className="absolute right-1 inline-flex h-7 w-7 sm:h-10 sm:w-10 items-center justify-end rounded-full hover:rounded-l-none bg-black-200 transition-[width] group-hover:w-[calc(100%-6px)] sm:group-hover:w-[calc(100%-4px)]">
