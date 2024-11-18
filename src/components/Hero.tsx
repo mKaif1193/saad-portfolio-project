@@ -6,7 +6,7 @@ import { DATA } from "@/data/Resume";
 import BlurFade from "./magicui/blur-fade";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { TypingAnimation } from "./magicui/typing-animation";
-import { SendIcon } from "lucide-react";
+import { DownloadIcon, SendIcon } from "lucide-react";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { buttonVariants } from "./ui/button";
@@ -15,6 +15,7 @@ import {
   TooltipContent,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
+import { Button } from "./ui/moving-border";
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -77,7 +78,28 @@ const Hero = () => {
             </BlurFade>
           </div>
 
-          <div className="flex items-center justify-end w-full">
+          <div className="flex items-center px-10 justify-between w-full">
+            <BlurFade delay={BLUR_FADE_DELAY} className="flex items-center">
+              <Button
+                borderRadius="14px"
+                className="p-1 text-black-100 bg-white/80"
+              >
+                <Link
+                  href={DATA.contact.social.Email.url}
+                  className="group relative inline-flex h-[40px] w-auto items-center justify-center pl-3 pr-4 sm:pr-8 font-medium"
+                >
+                  <span className="z-10 pr-2 text-sm sm:text-base">
+                    Download Resume
+                  </span>
+                  <div className="absolute right-1 inline-flex h-7 w-7 sm:h-10 sm:w-10 items-center justify-end rounded-full">
+                    <div className="mx-1.5 sm:mx-2.5 flex items-center justify-center">
+                      <DownloadIcon className="size-4 sm:size-5" />
+                    </div>
+                  </div>
+                </Link>
+              </Button>
+            </BlurFade>
+
             <BlurFade delay={BLUR_FADE_DELAY} className="flex items-center">
               <Tooltip>
                 <TooltipTrigger asChild>
